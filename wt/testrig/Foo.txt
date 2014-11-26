@@ -28,9 +28,9 @@ Create a Foo object and put it in a folder
     >>> cobj = addContentToContainer(folder, container)
 
     >>> cobj
-    <Foo at /plone/Members/test_user_1_/test-title>
+    <Foo at /plone/Members/test_user_1_/1>
 
-    >>> folder['test-title'].Title()
+    >>> folder['1'].Title()
     'Test Title'
 
     Do it again::
@@ -52,7 +52,7 @@ Create a Foo object and put it in a folder
     >>> cobj = addContentToContainer(folder, container)
 
     >>> cobj
-    <Foo at /plone/Members/test_user_1_/test-title-too>
+    <Foo at /plone/Members/test_user_1_/2>
 
-    >>> folder['test-title-too'].Title()
+    >>> folder['2'].Title()
     'Test Title Too'

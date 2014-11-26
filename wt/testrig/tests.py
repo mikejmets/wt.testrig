@@ -52,6 +52,14 @@ def test_suite():
 
         # -*- extra stuff goes here -*-
 
+        # Integration tests for Baa
+        ztc.ZopeDocFileSuite(
+            'Baa.txt',
+            package='wt.testrig',
+            optionflags = OPTION_FLAGS,
+            test_class=TestCase),
+
+
         # Integration tests for Foo
         ztc.ZopeDocFileSuite(
             'Foo.txt',

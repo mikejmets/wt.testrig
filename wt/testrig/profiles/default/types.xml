@@ -8,5 +8,6 @@
   -->
 <object name="portal_types" meta_type="Plone Types Tool">
   <!-- -*- extra stuff goes here -*- -->
+  <object name="wt.testrig.baa" meta_type="Dexterity FTI" />
   <object name="wt.testrig.foo" meta_type="Dexterity FTI" />
 </object>
