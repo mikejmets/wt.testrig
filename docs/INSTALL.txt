@@ -1,0 +1,17 @@
+wt.testrig Installation
+-----------------------
+
+To install wt.testrig using zc.buildout and the plone.recipe.zope2instance
+recipe to manage your project, you can do this:
+
+* Add ``wt.testrig`` to the list of eggs to install, e.g.:
+
+    [buildout]
+    ...
+    eggs =
+        ...
+        wt.testrig
+       
+* Re-run buildout, e.g. with:
+
+    $ ./bin/buildout
