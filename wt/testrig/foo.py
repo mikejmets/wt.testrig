@@ -38,23 +38,23 @@ class IFoo(form.Schema, IImageScaleTraversable):
     form.model("models/foo.xml")
 
 
-
-@grok.subscribe(IFoo, IObjectAddedEvent)
-def renameId(obj, event):
-    folder = obj.aq_parent
-    ids = [i[0] for i in 
-            folder.contentItems(
-                filter={'portal_type': ('wt.testrig.foo',)})]
-    ids.remove(obj.id)
-    if len(ids) > 0:
-        ids.sort()
-        new_id = ids[-1]
-        new_id = int(new_id) + 1
-        new_id = '%d' % new_id
-    else:
-        new_id = '1'
-    obj.jobNumber = new_id
-    api.content.rename(obj, new_id)
+#
+#@grok.subscribe(IFoo, IObjectAddedEvent)
+#def renameId(obj, event):
+#    folder = obj.aq_parent
+#    ids = [i[0] for i in 
+#            folder.contentItems(
+#                filter={'portal_type': ('wt.testrig.foo',)})]
+#    ids.remove(obj.id)
+#    if len(ids) > 0:
+#        ids.sort()
+#        new_id = ids[-1]
+#        new_id = int(new_id) + 1
+#        new_id = '%d' % new_id
+#    else:
+#        new_id = '1'
+#    obj.jobNumber = new_id
+#    api.content.rename(obj, new_id)
 
 # Custom content-type class; objects created for this content type will
 # be instances of this class. Use this class to add content-type specific

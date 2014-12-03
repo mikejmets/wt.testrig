@@ -19,7 +19,7 @@
   <property name="klass">wt.testrig.foo.Foo</property>
 
   <property name="behaviors">
-     <element value="plone.app.content.interfaces.INameFromTitle" />
+     <element value="wt.testrig.namegenerator.INameGenerator" />
      <element value="plone.app.dexterity.behaviors.metadata.IBasic"/>
    </property>
 

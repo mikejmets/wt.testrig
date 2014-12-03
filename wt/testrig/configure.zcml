@@ -35,5 +35,12 @@
       />
 
   <!-- -*- extra stuff goes here -*- -->
+  <plone:behavior
+    title="Special name(id) generator"
+    description=""
+    provides="wt.testrig.namegenerator.INameGenerator"
+    factory="wt.testrig.namegenerator.NameGenerator"
+    for="wt.testrig.foo.IFoo"
+    />
 
 </configure>
